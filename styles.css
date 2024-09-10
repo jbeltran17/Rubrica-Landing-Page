@@ -1,0 +1,458 @@
+ /* Reset de márgenes */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Estilos del header y la navegación */
+header {
+    background-color: #b41d1d;
+    /* Fondo rojo */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Contenedor del nav */
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo y los enlaces a ambos lados */
+    align-items: center;
+    width: 100%; /* Asegura que ocupe todo el ancho del header */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del menú hamburguesa */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 2px;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #b41d1d;
+    color: white;
+}   
+
+.hero-image {
+    border: 2px solid black; /* Borde negro de 2 píxeles */
+    display: flex;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Imagen en la sección hero */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #b41d1d;
+        position: center;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Sección de marcas */
+.brands {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #b41d1d;
+    color: white;
+}
+
+.brands p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logos img {
+    width: 800px;
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .brand-logos {
+        flex-direction: column;
+    }
+
+    .brand-logos img {
+        margin: 10px 0;
+    }
+}
+
+/* Sección Branding & Design System */
+.branding-system {
+    background-color: #b41d1d;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.branding-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.branding-content img {
+    width: 400px;
+}
+
+.branding-text {
+    max-width: 460px;
+    text-align: left;
+}
+
+.branding-text h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.branding-text p {
+    font-size: 20px;
+    color: #f5f5f5;
+}
+
+/* Estilos responsivos para la sección de branding */
+@media (max-width: 768px) {
+    .branding-content {
+        flex-direction: column;
+    }
+
+    .branding-text {
+        text-align: center;
+    }
+}
+
+/* Sección de servicios */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #b41d1d;
+}
+
+.services h2 {
+    font-size: 45px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+
+
+.service-card img {
+    width: 30px;
+    margin-bottom: 10px;
+    background-color: #e6a4a4;
+    border-radius: 20%;
+    padding:1%;
+}
+
+.service-card:nth-of-type(2) img {
+    width: 30px;
+    margin-bottom: 10px;
+    background-color: #fdddca;
+    border-radius: 20%;
+    padding:1%;
+}
+
+.service-card:nth-of-type(3) img {
+    width: 30px;
+    margin-bottom: 10px;
+    background-color: #96eff5;
+    border-radius: 20%;
+    padding:1%;
+}
+
+
+.service-card h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #0e0d0d;
+}
+
+.service-card p {
+    font-size: 15px;
+    color: #322631;
+}
+
+/* Estilos responsivos para la sección de servicios */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+}
+
+/* Sección de llamado a la acción */
+.cta {
+    background-color: #b41d1d; /* Fondo rojo */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-content {
+    background-color: #bfb8b8; /* Fondo gris */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cta-content img {
+    width: 400px;
+    margin-right: 40px;
+    border-radius: 20px; /* Bordes redondeados para la imagen */
+}
+
+.cta-text {
+    max-width: 400px;
+    color: white; /* Color blanco para el texto */
+}
+
+.cta-text h2 {
+    font-size: 36px; /* Tamaño del texto */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta .btn {
+    background-color: #8f1616;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta .btn:hover {
+    background-color: #8f1616;
+}
+
+/* Estilos responsivos para la sección de llamado a la acción */
+@media (max-width: 768px) {
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cta-content img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .cta-text {
+        max-width: 100%;
+    }
+
+    .cta-text h2 {
+        font-size: 28px;
+    }
+
+    .cta-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-text h2 {
+        font-size: 24px;
+    }
+
+    .cta-text p {
+        font-size: 14px;
+    }
+
+    .cta .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #6b5e5e;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    max-width: 250px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos para el pie de página */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
