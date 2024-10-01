@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="gray" onclick="clearDisplay()">AC</button>
+            <button class="gray" onclick="appendToDisplay('+/-')">+/-</button>
+            <button class="gray" onclick="appendToDisplay('%')">%</button>
+            <button class="orange" onclick="appendToDisplay(' / ')">÷</button>
+            
+            <button class="dark" onclick="appendToDisplay('7')">7</button>
+            <button class="dark" onclick="appendToDisplay('8')">8</button>
+            <button class="dark" onclick="appendToDisplay('9')">9</button>
+            <button class="orange" onclick="appendToDisplay(' * ')">×</button>
+            
+            <button class="dark" onclick="appendToDisplay('4')">4</button>
+            <button class="dark" onclick="appendToDisplay('5')">5</button>
+            <button class="dark" onclick="appendToDisplay('6')">6</button>
+            <button class="orange" onclick="appendToDisplay(' - ')">-</button>
+            
+            <button class="dark" onclick="appendToDisplay('1')">1</button>
+            <button class="dark" onclick="appendToDisplay('2')">2</button>
+            <button class="dark" onclick="appendToDisplay('3')">3</button>
+            <button class="orange" onclick="appendToDisplay(' + ')">+</button>
+            
+            <button class="dark double" onclick="appendToDisplay('0')">0</button>
+            <button class="dark" onclick="appendToDisplay(',')">,</button>
+            <button class="orange" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
